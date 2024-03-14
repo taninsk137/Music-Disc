@@ -34,7 +34,6 @@ export interface Bot {
 
 export interface Config {
     admin: string | null;
-    clientSecret: string | null;
     name: string;
     prefix: string;
     status: ClientPresenceStatus | string;
@@ -53,11 +52,8 @@ export interface Config {
 
 interface SiteConfig {
     port: number;
-    loginType: 'USER' | 'OAUTH2';
     username: string;
     password: string;
-    oauth2Link: string | null;
-    oauth2RedirectUri: string | null;
 }
 
 interface LocalNode {
@@ -101,9 +97,4 @@ export interface QueuePage {
     maxPage: number;
     curPage: number;
     msg: Message<boolean> | null;
-}
-
-export enum LoginType {
-    USER = 'USER',
-    OAUTH2 = 'OAUTH2'
 }
