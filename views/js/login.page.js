@@ -1,6 +1,6 @@
 /**
  * Required
- * None
+ * <script src="/static/js/lib/socket.io-4.7.2.min.js"></script>
  */
 
 
